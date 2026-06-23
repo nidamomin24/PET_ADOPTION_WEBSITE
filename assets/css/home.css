@@ -1,0 +1,396 @@
+/* General styles */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: georgia, sans-serif;
+	
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* ------------------navigation bar----------------------- */
+nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 2cm;
+	justify-content: space-around;
+  
+	
+}
+
+nav .logo{
+	align-items: center;
+	display: flex;
+	flex-basis: 50%;
+}
+
+nav .logo img{
+	width: 3cm;
+	margin-right: 7px;
+}
+
+nav .logo h1{
+	font-size: 0.8cm;
+}
+
+nav .nav-links{
+	flex-basis: 50%;
+	text-align: center;
+	padding-left: 2cm;
+	
+}
+
+nav .nav-links ul{
+	display: flex;
+	list-style: none;
+}
+
+nav .nav-links ul li a{
+	color: black;
+	text-decoration: none;
+	margin-right: 25px;
+	font-size: 22px;
+  transition: 0.5s;
+}
+
+nav .nav-links ul li a:hover{
+	color: red;
+}
+
+
+ .nav-icons i{
+	font-size: 30px;
+	margin-right: 10px;
+	padding: 10px;
+	
+}
+
+.nav-icons i:hover{
+	background: lightgray;
+	border-radius: 5px;
+	
+}
+/* ---------------------end navigation-------------------------- */
+
+/* ----------------------------head section ----------------------------*/
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    
+}
+/* ----------------------------end head-------------------------------- */
+
+/* ----------------------Section :- how store works-------------------- */
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 50px;
+    background-color: #FFFFFF; /* White background for clarity */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about .leftSide {
+    width: 50%;
+}
+
+.about .leftSide h1 {
+    font-size: 3rem;
+    color: #2C3E50; 
+}
+
+.about .leftSide p {
+    font-size: 1.4rem;
+    margin: 20px 0;
+    color: #7F8C8D; }
+
+.about .primary-btn {
+    background-color: #FF6347; 
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about .primary-btn:hover {
+    background-color:  #2C3E50; 
+}
+
+ .rightSide img {
+    width: 80%;
+    height:100%;
+    border-radius: 10px;
+	transition: 0.5s;
+	
+}
+.rightSide img:hover{
+	filter: drop-shadow(10px 10px 15px grey);
+}
+/* ----------------end---------------------------------------*/
+
+/* ------------------Process Section------------------------- */
+.process {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 30px;
+    background-color: #F1F1F1; 
+}
+
+.box {
+    width: 21%;
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 50px;
+    text-align: center;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.61);
+    transition: transform 0.3s ease-in-out;
+
+
+}
+.box .para{
+	text-align: left;
+}
+
+.process .box:hover {
+    transform: translateY(-10px); 
+}
+
+ .box .bullet {
+    background-color: #FF6347; 
+    color: #fff;
+    padding: 15px;
+	border-radius: 50%;
+	font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.process h2 {
+    color: #2C3E50;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+
+}
+/* ---------------------------end process------------------------------- */
+
+/* -----------------------Care Section----------------------------------- */
+.care {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+    background-image: url('../images/pawbg\ \(2\).png');
+}
+
+.care-ins {
+    max-width: 800px; 
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.care h1 {
+    font-size: 2.5rem;
+    color: #ff6347; 
+    font-weight: bold;
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.care h3 {
+    font-size: 1.2rem;
+    color: #555; 
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    margin-top: 0;
+    text-align: justify; 
+    padding-bottom: 30px; 
+}
+/* ----------------------------end care-------------------------- */
+
+/*------------------------------ Footer--------------------------- */
+.footer {
+    background-color: #222;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h5 {
+    font-size: 17px;
+    color:  #ffcc00; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid purple; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+
+.subscribe input {
+    width: 280px; 
+    padding: 12px;
+    font-size: 17px;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    outline: none;
+}
+
+.subscribe button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px; 
+    transition: 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: #e6b800; }
+
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    font-size: 25px;
+    margin-right: 12px;
+    color:#ffcc00;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color:white;
+}
+
+.footer-description {
+    max-width: 250px; 
+    text-align: left; 
+    margin: 0;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    word-break: break-word; 
+    white-space: pre-line; 
+}
+
+
+
+/* ------------------------------end footer-------------------- */
+
+/* ----------Animation when the element comes into view--------- */
+.process, .about, .care{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.8s ease-out;
+}
+
+/* This class will be added dynamically to trigger animation */
+.show {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+
+/* ----------------------heading text animation----------------------- */
+.animated-text {
+    font-family: cursive;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    opacity: 0; 
+    animation: typing 5s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+/* -----------------------end------------------------------------------- */

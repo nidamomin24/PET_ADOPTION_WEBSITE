@@ -1,0 +1,131 @@
+/* Full page setup */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Container to divide the page */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Left side - background image or color */
+.left-side {
+  flex: 1;
+  background: url('../images/loginbg.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Right side - Sign up form */
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Form box */
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 50px 60px 70px;
+  text-align: center;
+}
+
+/* Styling for the form title */
+.form-box h1 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: #1E2A33;
+}
+
+/* Styling for the input fields */
+.input-field {
+  background: #eaeaea;
+  margin: 10px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+input, select {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+  border-radius: 3px;
+}
+
+.input-field i {
+  padding: 15px;
+  color: #163246;
+}
+
+/* Button field container */
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  background: #1E2A33;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.btn-field button.disable {
+  background: #eaeaea;
+  color: #555;
+}
+
+/* Input styling */
+.input-group {
+  height: 350px; 
+}
+
+/* Account type dropdown styling */
+.input-field select {
+  padding: 10px;
+}
+
+/* Link Styling for Sign Up / Sign In */
+#account-link a {
+  color: #1E2A33;
+  text-decoration: none;
+  font-weight: bold;
+}
+#account-link a:hover {
+  text-decoration: underline;
+}
+
+/* Input fields and account selection fields */
+.input-field {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out; 
+}
+
+
+/* Optional: Set initial state (hidden) */
+#nameField, #countryCode, #select {
+    max-height: 0;
+}
+

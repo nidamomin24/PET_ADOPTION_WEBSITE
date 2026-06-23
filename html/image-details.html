@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Details</title>
+    <link rel="stylesheet" href="pawtopia.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <img src="logo.png"><h1 style="color:rgb(45, 74, 74)">PAW HEAVEN</h1>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pawtopia.html">Pawtopia</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </nav>
+</header>
+<br><br><br>
+ <!-- Image Box -->
+ <div class="details-image-box">
+    <div class="details-image-container">
+        <!-- Multiple Images for Animation -->
+         <div class="Charlie">
+        <img src="pet(i).jpg" alt="Image 1" class="details-image">
+        <img src="pet(ii).jpg" alt="Image 2" class="details-image">
+        <img src="pet(iii).jpg" alt="Image 3" class="details-image">
+        </div>
+        
+    </div>
+</div>
+
+
+<br><br>
+<!-- Details Box -->
+<div class="details-info-box">
+    <h2 id="details-title" class="details-title">Pet Name</h2>
+    <p id="details-description" class="details-description">Age: 0 years</p>
+    <p id="details-breed" class="details-description">Breed: </p>
+    <p id="details-color" class="details-description">Color: </p>
+    <p id="details-gender" class="details-description">Gender: </p>
+    <p id="details-vaccination" class="details-description">Vaccination Status: </p>
+    <p id="details-status" class="details-status">Adoption Status: </p>
+    <a href="pawtopia.html" class="back-btn">Back to Gallery</a>
+</div>
+</div><br><br><br>
+</section>
+
+<!-- ------------------------ Footer ------------------------ -->
+<footer>
+    <div class="footer">
+        <br> <p style="font-size: 35px;font-weight: bold;">Paw Heaven</p><br>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <br><p>Copyright &copy; 2024 Paw Heaven</p>
+    </div>
+</footer>
+
+<script>
+    // Get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name') || 'Unknown';
+    const age = urlParams.get('age') || 'N/A';
+    const breed = urlParams.get('breed') || 'N/A';
+    const color = urlParams.get('color') || 'N/A';
+    const gender = urlParams.get('gender') || 'N/A';
+    const vaccination = urlParams.get('vaccination') || 'N/A';
+    const status = urlParams.get('status') || 'N/A';
+    const imageSrc = urlParams.get('image') || 'default-image.jpg'; // Fallback image
+
+    // Display the details
+    document.getElementById('details-title').textContent = name;
+    document.getElementById('details-description').textContent = `Age: ${age} years`;
+    document.getElementById('details-breed').textContent = `Breed: ${breed}`;
+    document.getElementById('details-color').textContent = `Color: ${color}`;
+    document.getElementById('details-gender').textContent = `Gender: ${gender}`;
+    document.getElementById('details-vaccination').textContent = `Vaccination Status: ${vaccination}`;
+    document.getElementById('details-status').textContent = `Adoption Status: ${status}`;
+    document.getElementById('details-image').src = imageSrc;
+    document.getElementById('details-image').alt = name; // Set alt attribute for accessibility
+</script>
+
+
+</body>
+</html>

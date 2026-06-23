@@ -1,0 +1,369 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: georgia, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------ Navigation Bar ----------------------- */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 2cm;
+    justify-content: space-around;
+}
+
+nav .logo {
+    align-items: center;
+    display: flex;
+    flex-basis: 50%;
+}
+
+nav .logo img {
+    width: 3cm;
+    margin-right: 7px;
+}
+
+nav .logo h1 {
+    font-size: 0.8cm;
+}
+
+nav .nav-links {
+    flex-basis: 50%;
+    text-align: center;
+    padding-left: 2cm;
+}
+
+nav .nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+nav .nav-links ul li a:hover {
+    color: red;
+}
+
+.nav-icons i {
+    font-size: 30px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.nav-icons i:hover {
+    background: lightgray;
+    border-radius: 5px;
+}
+
+/* ------------------ End Navigation ----------------------- */
+/* ----------------------------head section ----------------------------*/
+.about {
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),url('../images/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+
+
+    
+}
+
+.about-content {
+    width: 50%;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* ----------------------------end head-------------------------------- */
+
+
+/* ------------------ Contact Section ----------------------- */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-info {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;  
+}
+
+.contact-details .detail-item {
+    display: flex;
+    align-items: center; 
+    gap: 10px;  
+}
+
+.contact-details i {
+    font-size: 20px; 
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin: 0; 
+}
+
+
+.contact-form {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #FF6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+
+.map-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* ------------------------------ Footer --------------------------- */
+.footer {
+    background-color: #222;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h5 {
+    font-size: 17px;
+    color:  #ffcc00; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid purple; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+
+.subscribe input {
+    width: 280px; 
+    padding: 12px;
+    font-size: 17px;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    outline: none;
+}
+
+.subscribe button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px; 
+    transition: 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: #e6b800; }
+
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    font-size: 25px;
+    margin-right: 12px;
+    color:#ffcc00;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color:white;
+}
+
+.footer-description {
+    max-width: 250px; 
+    text-align: left; 
+    margin: 0;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    word-break: break-word; 
+    white-space: pre-line; 
+}
+
+
+
+/* ------------------------------ End Footer -------------------- */
+/* ----------------------heading text animation----------------------- */
+.animated-text {
+    font-family: cursive;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    opacity: 0; 
+    animation: typing 5s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+/* -----------------------end------------------------------------------- */  

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/b356ad9dc8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="left-side">
+        <!-- Left side background (can be an image or a color) -->
+    </div>
+    <div class="right-side">
+        <div class="form-box">
+            <h1 id="title">Sign In</h1>
+            <form action="signin.php" method="POST">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div id="account-link">
+                        Don't have an account? <a href="signup.html">Sign Up</a>
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn" class="disable">Sign Up</button>
+                    <button type="submit" id="signinBtn">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    let signupBtn = document.getElementById("signupBtn");
+    let signinBtn = document.getElementById("signinBtn");
+    let title = document.getElementById("title");
+    let accountLink = document.getElementById("account-link");
+
+    // Handle Sign Up button click
+    signupBtn.onclick = function() {
+        document.querySelectorAll('.input-field').forEach((field) => {
+            field.style.transition = "max-height 0.5s ease-in-out";
+            field.style.maxHeight = "0";
+        });
+
+        // Update title and account link
+        title.innerHTML = "Sign Up";
+        signupBtn.classList.remove("disable");
+        signinBtn.classList.add("disable");
+        accountLink.innerHTML = "Already have an account? <a href='signin.html'>Sign In</a>";
+
+        // Delay the redirect to signup.html to let animation complete
+        setTimeout(function() {
+            window.location.href = "signup.html"; // Redirect to Sign Up page after animation
+        }, 300);  // Adjust the delay time based on your transition
+    }
+
+    // Handle Sign In button click (optional if needed for back and forth animation)
+    signinBtn.onclick = function() {
+        // Reset field visibility for Sign In
+        document.querySelectorAll('.input-field').forEach((field) => {
+            field.style.transition = "max-height 0.5s ease-out-in";
+            field.style.maxHeight = "60px"; // Reset max height for fields
+        });
+
+        // Update title and account link
+        title.innerHTML = "Sign In";
+        signupBtn.classList.add("disable");
+        signinBtn.classList.remove("disable");
+        accountLink.innerHTML = "Don't have an account? <a href='signup.html'>Sign Up</a>";
+    }
+</script>
+
+</body>
+</html>

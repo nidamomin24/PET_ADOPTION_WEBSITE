@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/b356ad9dc8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<img src="logo.png"><h1 style="color:rgb(45, 74, 74)">PAW HEAVEN</h1>
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li><a href="home.php">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="pawtopia.html">Pawtopia</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="nav-icons">
+				<a href="signup.html"><i class="fas fa-user-circle"  ></i></a>
+			</div>
+		</nav></header>
+<!-- --------------------------nav end----------------------------------------------- -->
+<!-- ------------------------------main--------------------------- -->
+<!-- About Section -->
+<section class="about">
+    <div class="about-content">
+        <div class="animated-text">
+        <br><br><br><h1>About Us</h1></div>
+</div>
+</section>
+<div class="about-info"><br><br><br><br>
+    <h1 class="process" style="margin-left: 5%;color:#2C3E50;">Who Are We?</h1><br><br>
+        <p class="process">At Paw Heaven, our mission is to connect loving families with furry companions who need a forever home. 
+            We believe in responsible pet adoption, and we work tirelessly to ensure each animal finds a suitable 
+            and caring environment. Our goal is not just to adopt out pets, but to foster long-term relationships 
+            between owners and their pets, ensuring a lifetime of love and care.
+       We provide guidance throughout the adoption process, offering resources to help new pet parents adjust 
+            and thrive. Whether you’re a first-time pet owner or a seasoned pro, 
+            we’re here to support you every step of the way.</p>
+
+            <h1 class="process" style="margin-left: 5%; color:#2C3E50;"><br><br>Why Adopt With Us?</h1>
+            
+            <div class="content">
+                <div class="leftSide">
+                <ul>
+                    <li><strong>Rescue First:</strong> We prioritize rescuing pets from shelters and unfortunate situations.</li><br>
+                    <li><strong>Comprehensive Support:</strong> We offer advice and guidance throughout the adoption process.</li><br>
+                    <li><strong>Health & Wellness:</strong> Every pet is vetted, vaccinated, and ready for a healthy new home.</li><br>
+                    <li><strong>Forever Families:</strong> We believe in long-term placements and fostering loving relationships.</li><br>
+        </ul>
+                </div>
+              </div>
+            </div>
+<!-- ---------------------------------------faq-------------------- -->
+<div class="faq-section">
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    
+    <div class="faq-item">
+        <button class="faq-question">How do I adopt a pet?</button>
+        <div class="faq-answer">
+            <p>To adopt a pet, browse through our available animals on our website or visit our adoption center. Once you find a pet that catches your eye, fill out an adoption application. Afterward, we'll review your application, and if everything looks good, we’ll arrange a meeting to ensure the pet is a perfect fit for you and your family. Once approved, you’ll complete the adoption process and bring your new pet home!</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">What is the adoption fee?</button>
+        <div class="faq-answer">
+            <p>The adoption fee varies based on the pet’s age, breed, and medical needs. For example, puppies and kittens may have a higher fee due to their medical treatments, while senior pets may have a lower fee. This fee helps cover the cost of vaccinations, spaying/neutering, and veterinary care to ensure that your new pet is healthy and ready for their new home.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">What should I prepare before adopting a pet?</button>
+        <div class="faq-answer">
+            <p>Before adopting, you should prepare your home to ensure a safe and welcoming environment for your new pet. This includes setting up a designated area for your pet to sleep and eat, ensuring that your home is pet-proofed (e.g., removing hazards like toxic plants or unsecured items), and making sure you have all the necessary supplies (food, toys, grooming tools, etc.). We provide resources to guide you through the preparation process, and we’re here to answer any questions you may have.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">What happens if my pet needs medical care after adoption?</button>
+        <div class="faq-answer">
+            <p>Once you adopt a pet, it’s your responsibility to provide medical care, including regular vet check-ups, vaccinations, and treatment for any illnesses or injuries. However, if you need guidance on where to go for veterinary services, we can provide recommendations. Additionally, we’re always here to offer advice and support in caring for your pet’s health.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------end main--------------------------------- -->
+<!-- -------------------------footer------------------------------------ -->
+<footer>
+    <div class="footer">
+       <br> <p style="font-size: 35px;font-weight: bold;" >Paw Heaven</p><br>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+ </div>
+        <br><p>Copyright &copy; 2024 Paw Heaven</p>
+    </div>
+</footer>
+<!-- ---------------------js--------------------------------- -->
+<script>
+    window.addEventListener("scroll", function () {
+const elements = document.querySelectorAll('.about, .process, .care');
+elements.forEach(function (element) {
+if (element.getBoundingClientRect().top < window.innerHeight) {
+element.classList.add('show');
+}
+});
+});
+
+
+
+// Script to toggle FAQ answers
+document.addEventListener("DOMContentLoaded", function() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(function(question) {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling; // Find the corresponding answer div
+
+            // Toggle visibility of the answer
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                answer.classList.remove('show');
+            } else {
+                answer.style.display = "block";
+                setTimeout(() => {
+                    answer.classList.add('show');
+                }, 50); // Slight delay to trigger transition
+            }
+        });
+    });
+});
+
+</script>
+
+
+<!-- ---------------------end js---------------------------------- -->
+</body></html>

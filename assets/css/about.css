@@ -1,0 +1,463 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: georgia, sans-serif;
+	
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* ------------------navigation bar----------------------- */
+nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 2cm;
+	justify-content: space-around;
+	
+}
+
+nav .logo{
+	align-items: center;
+	display: flex;
+	flex-basis: 50%;
+}
+
+nav .logo img{
+	width: 3cm;
+	margin-right: 7px;
+}
+
+nav .logo h1{
+	font-size: 0.8cm;
+}
+
+nav .nav-links{
+	flex-basis: 50%;
+	text-align: center;
+	padding-left: 2cm;
+	
+}
+
+nav .nav-links ul{
+	display: flex;
+	list-style: none;
+}
+
+nav .nav-links ul li a{
+	color: black;
+	text-decoration: none;
+	margin-right: 25px;
+	font-size: 22px;
+  transition: 0.5s;
+}
+
+nav .nav-links ul li a:hover{
+	color: red;
+}
+
+
+ .nav-icons i{
+	font-size: 30px;
+	margin-right: 10px;
+	padding: 10px;
+	
+}
+
+.nav-icons i:hover{
+	background: lightgray;
+	border-radius: 5px;
+	
+}
+/* ---------------------end navigation-------------------------- */
+
+/* ----------------main-------------------------------- */
+
+
+.about {
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),url('../images/bg1\ copy.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+
+
+    
+}
+
+.about-content {
+    width: 50%;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* -------------new------------------- */
+   /* Base Styling for About Info */
+.about-info {
+    padding: 50px;
+    max-width: 1100px;
+    margin: 60px auto;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px); 
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.about-info:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3); 
+}
+
+.about-info h1 {
+    font-size: 2.8rem;
+    color: #FF6347;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.about-info p {
+    font-size: 1.3rem;
+    color: #555;
+    line-height: 1.8;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Section Layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.85); 
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.leftSide {
+    flex: 1;
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leftSide:hover {
+    transform: translateY(-6px); 
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); 
+}
+
+.leftSide ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.leftSide li {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.leftSide strong {
+    color: #FF6347; 
+}
+
+
+
+/* FAQ Section Styling */
+.faq-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px); 
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.faq-section:hover {
+    transform: translateY(-6px); 
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    color: #FF6347;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: linear-gradient(135deg, #FF6347, #FF8C00); 
+    color: white;
+    padding: 18px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question:hover {
+    background: linear-gradient(135deg, #FF4500, #FF6347); 
+    transform: translateY(-6px); 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); 
+}
+
+.faq-answer {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.faq-answer p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.faq-answer.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .leftSide{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .faq-question {
+        font-size: 1.3rem;
+        padding: 15px 25px;
+    }
+
+    .faq-section {
+        padding: 20px;
+    }
+
+    .faq-item {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* --------------------------end main---------------------- */
+
+/* ----------------------heading text animation----------------------- */
+.animated-text {
+    font-family: cursive;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    opacity: 0; 
+    animation: typing 5s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+/* -----------------------end------------------------------------------- */
+
+/* ----------Animation when the element comes into view--------- */
+.process, .care{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.8s ease-out;
+}
+
+.show {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+/*------------------------------ Footer--------------------------- */
+.footer {
+    background-color: #222;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h5 {
+    font-size: 17px;
+    color:  #ffcc00; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid purple; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+
+.subscribe input {
+    width: 280px; 
+    padding: 12px;
+    font-size: 17px;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    outline: none;
+}
+
+.subscribe button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px; 
+    transition: 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: #e6b800; }
+
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    font-size: 25px;
+    margin-right: 12px;
+    color:#ffcc00;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color:white;
+}
+
+.footer-description {
+    max-width: 250px; /* Restricts text width */
+    text-align: left; /* Aligns text to the left */
+    margin: 0; /* Removes auto-centering */
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    word-break: break-word; 
+    white-space: pre-line; 
+}
+
+
+
+/* ------------------------------end footer-------------------- */
